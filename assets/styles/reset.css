@@ -1,0 +1,57 @@
+/* CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body, ul, li, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set core root defaults */
+html {
+  background-color: #fff;
+  --text: #000;
+  scroll-behavior: smooth;
+}
+
+/* Remove default padding */
+body {
+  padding: 0;
+}
+
+/* Remove default background and border on table elements */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove outline on active elements */
+a,
+button,
+input,
+textarea,
+select,
+details,
+summary {
+  outline: none;
+}
+
+/* Reset to default styling for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

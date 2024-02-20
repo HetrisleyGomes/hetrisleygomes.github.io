@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Trench';
+    font-weight: 400;
+    src: url('../fonts/trench100free.otf');
+}
+
+:root{
+    --main-color: #0056d2;
+    --main-color-2: #547bee;
+    --sub-color: #333;
+    --sub-color-2: #222;
+    --text-dark: #000;
+    --text-light: #f4f4f4;
+    --scroll-color: #777;
+    --text-size: 16px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* SCROLL */
+body::-webkit-scrollbar-track{
+    background: transparent;
+}
+body::-webkit-scrollbar {
+    width: 10px; 
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--scroll-color);
+    border-radius: 10px;
+    border: #fff 1px solid;
+}
+/* FIM SCROLL */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--text-light);
+    color: var(--text-dark);
+    overflow-y: scroll;
+    user-select: none;
+    font-size: var(--text-size);
+}
+/* HEADER */
+.header {
+    background-color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nome-header{
+    font-family: 'Trench', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 2em;
+    display: inline-block;
+    line-height: 1;
+    color: var(--text-light);
+    text-decoration: none;
+}
+/* NAV */
+.menu {
+    
+    display: flex;
+}
+.menu li {
+    margin-left: 10px;
+}
+.menu li a {
+    display: block;
+    padding: 10px;
+    color: var(--text-light);
+    font-size: var(--text-size);
+}
+/* FIM DO NAV */
+
+/* FIM DO HEADER */
+main {
+    margin: 30px;
+    display: grid; 
+    grid-template-columns: 0.6fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 20px; 
+    grid-template-areas: 
+      "Aside content content"
+      "Aside content content"
+      "Aside content content"; 
+}
+
+aside{
+    grid-area: Aside;
+    box-shadow: var(--scroll-color) 3px 3px 8px;
+    height: max-content;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: justify;
+    padding-bottom: 30px;
+    & p{
+      font-size: 14px;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      margin-right: 10px;
+      & a {
+        padding-left: 8px;
+        font-weight: 600;
+      }
+    };
+}
+
+main > div {
+    grid-area: content;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--main-color);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    height: 15vh;
+}
+footer > div {
+    margin: 0 10px;
+    padding: 0 10px;
+}
+footer > .linkes {
+    border-left: var(--text-light) 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+footer > .linkes > div {
+    padding: 0 10px;
+}
+footer > .linkes a {
+    text-decoration: none;
+    color: var(--sub-color);
+    color: var(--text-light);
+}
+footer > .linkes a:hover {
+    text-decoration: underline;
+}
+/* FIM DO FOOTER */

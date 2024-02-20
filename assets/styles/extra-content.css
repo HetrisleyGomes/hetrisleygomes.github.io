@@ -1,0 +1,157 @@
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 50px 50px 10px;
+    padding-bottom: 10px;
+    border-bottom: var(--scroll-color) 1px solid;
+}
+
+.section-about {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.section-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.section-details{
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+/* CARDS */
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: var(--sub-color) 1px solid;
+    border-radius: 24px;
+    padding: 8px;
+}
+.card_img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10%;
+    box-shadow: var(--scroll-color) 1px 1px 3px;
+}
+.card_title{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1vh 0;
+    text-align: justify;
+}
+.card_description {
+    border-top: var(--scroll-color) 1px solid;
+}
+.card_description, .card_info{
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--sub-color);
+    text-align: center;
+}
+.card_link {
+    padding: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--main-color-2);
+}
+/* FIM DOS CARDS*/
+
+/* SESSÃO DE EDUCAÇÃO */
+.topic{
+    color: var(--main-color-2);
+    font-size: 18px;
+}
+
+h3 {
+    padding: 8px;
+    border-bottom: var(--scroll-color) 1px solid;
+}
+
+.content > .container {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 14px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    
+}
+.content > .container span {
+    margin: 5px;
+    text-align: justify;
+}
+
+.container a:hover{
+    color: var(--main-color-2);
+    text-decoration: underline;
+}
+
+.content > div > li {
+    font-size: var(--text-size);
+    list-style: circle;
+}
+
+.evento {
+    color: var(--sub-color);
+    margin: 8px 0;
+}
+
+.data {
+    color: var(--sub-color);
+    font-size: 16px;
+}
+
+/* FIM DA SESSÃO DE EDUCAÇÃO */
+
+/* ICONS */
+.material-symbols-outlined {
+    font-size: 14px;
+}
+h3 > .material-symbols-outlined {
+    font-size: 18px;
+}
+.title > .material-symbols-outlined {
+    font-size: 22px;
+    margin-right: 10px;
+}
+/* FIM DOS ICONS */
+
+@media (max-width: 480px) {
+    main {
+        display: block;
+        margin: 30px;
+    }
+    aside {
+        display: none;
+    }
+    .nome-header, .menu li a{
+        flex: 1;
+        font-size: var(--text-size);
+    }
+    .section-projects {
+        grid-template-columns: 1fr;
+    }
+    .title {
+        margin: 20px 10px;
+    }
+    footer > div {
+        flex: 1;
+    }
+}
