@@ -18,20 +18,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* SCROLL */
-body::-webkit-scrollbar-track{
-    background: transparent;
-}
-body::-webkit-scrollbar {
-    width: 10px; 
-}
-body::-webkit-scrollbar-thumb {
-    background: var(--scroll-color);
-    border-radius: 10px;
-    border: #fff 1px solid;
-}
-/* FIM SCROLL */
-
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: content-box;
@@ -93,7 +79,7 @@ main {
 
 aside{
     grid-area: Aside;
-    box-shadow: var(--scroll-color) 3px 3px 8px;
+    box-shadow: var(--scroll-color) 1px 1px 1px;
     height: max-content;
     padding: 8px;
     border-radius: 8px;
@@ -148,3 +134,4 @@ footer > .linkes a:hover {
     text-decoration: underline;
 }
 /* FIM DO FOOTER */
+

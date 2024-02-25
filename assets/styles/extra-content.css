@@ -22,6 +22,14 @@
     gap: 10px;
 }
 
+.section-projects-ui {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
 .section-details{
     /*display: grid;*/
     /*grid-template-columns: 1fr 1fr;*/
@@ -39,25 +47,33 @@
     align-items: center;
     border: var(--sub-color) 1px solid;
     border-radius: 24px;
-    padding: 8px;
 }
 .card_img{
     width: 100%;
-    height: auto;
     display: block;
-    border-radius: 10%;
-    box-shadow: var(--scroll-color) 1px 1px 3px;
+    padding: 8px;
+    border-radius: 16px;
 }
 .card_title{
     font-size: 14px;
     font-weight: 700;
     padding: 1vh 0;
-    text-align: justify;
-}
-.card_description {
+    text-align: center;
+    width: 100%;
     border-top: var(--scroll-color) 1px solid;
 }
-.card_description, .card_info{
+.card_description {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: justify;
+    border-top: var(--scroll-color) 1px solid;
+    border-bottom: var(--scroll-color) 1px solid;
+    max-height: 80px;
+    overflow: auto;
+    padding: 10px;
+    color: var(--sub-color);
+}
+.card_info{
     padding-top: 5px;
     font-size: 12px;
     font-weight: 500;
@@ -71,6 +87,30 @@
     color: var(--main-color-2);
 }
 /* FIM DOS CARDS*/
+
+/* UI/UX */
+.card_ui {
+    flex-direction: column;
+    align-items: center;
+    border: var(--scroll-color) 1px solid;
+}
+.card_UI_img {
+    width: 100%;
+    max-height: 195px;
+}
+.card_UI_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border: var(--scroll-color) 1px solid;
+    & i {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+}
+/* FIM DO UI/UX */
 
 /* SESSÃO DE EDUCAÇÃO */
 .topic{
@@ -117,7 +157,6 @@ h3 {
     color: var(--sub-color);
     font-size: 16px;
 }
-
 /* FIM DA SESSÃO DE EDUCAÇÃO */
 
 /* ICONS */
