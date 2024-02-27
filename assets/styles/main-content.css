@@ -26,7 +26,6 @@ body {
     background-color: var(--text-light);
     color: var(--text-dark);
     overflow-y: scroll;
-    user-select: none;
     font-size: var(--text-size);
 }
 /* HEADER */
