@@ -36,7 +36,6 @@ table {
 
 /* Remove outline on active elements */
 a,
-button,
 input,
 textarea,
 select,
@@ -54,4 +53,15 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+button {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  font-family: inherit; /* Herda a fonte do elemento pai */
+  font-size: 100%; /* Define o tamanho da fonte para 100% do valor padrão */
+  line-height: 1; /* Define a altura da linha para 1 */
+  cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+  background-color: transparent; /* Remove o fundo padrão */
+  border: none; /* Remove a borda padrão */
 }

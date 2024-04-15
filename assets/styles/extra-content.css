@@ -1,334 +1,105 @@
-.title {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 50px 50px 10px;
-    padding-bottom: 10px;
-    border-bottom: var(--scroll-color) 1px solid;
-}
-
-.section-about, .aside_mobile {
-    display: block;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: justify;
-}
-.aside_mobile{
-    display: none;
-}
-
-.section-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    max-width: 800px;
-    margin: 0 auto;
-    gap: 10px;
-}
-
-.section-projects-ui {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    max-width: 800px;
-    margin: 0 auto;
-    gap: 10px;
-}
-.section-projects-data {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 800px;
-    margin: 0 auto;
-    gap: 10px;
-}
-
-.section-details{
-    /*display: grid;*/
-    /*grid-template-columns: 1fr 1fr;*/
-    max-width: 800px;
-    margin: 0 auto;
-    gap: 10px;
-    margin-bottom: 100px;
-}
-
-/* CARDS */
-.cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border: var(--sub-color) 1px solid;
-    border-radius: 24px;
-}
-.card_img{
-    width: 100%;
-    display: block;
-    padding: 8px;
-    border-radius: 16px;
-}
-.card_title{
-    font-size: 14px;
-    font-weight: 700;
-    padding: 1vh 0;
-    text-align: center;
-    width: 100%;
-    border-top: var(--scroll-color) 1px solid;
-}
-.card_description {
-    font-size: 12px;
-    font-weight: 500;
-    text-align: justify;
-    border-top: var(--scroll-color) 1px solid;
-    border-bottom: var(--scroll-color) 1px solid;
-    max-height: 80px;
-    overflow: auto;
-    padding: 10px;
-    color: var(--sub-color);
-}
-.card_info{
-    padding-top: 5px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--sub-color);
-    text-align: center;
-}
-.card_link {
-    padding: 8px;
-    font-size: 14px;
-    text-decoration: none;
-    color: var(--main-color-2);
-}
-/* FIM DOS CARDS*/
-
-/* UI/UX */
-.card_ui {
-    flex-direction: column;
-    align-items: center;
-    border: var(--scroll-color) 1px solid;
-}
-.card_UI_img {
-    width: 100%;
-    max-height: 195px;
-}
-.card_ui > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-}
-.card_UI_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    
-    border: var(--scroll-color) 1px solid;
-    & i {
-        font-size: 12px;
-        margin-left: 8px;
-    }
-}
-/* FIM DO UI/UX */
-
-/* DATA ANALITYCS */
-.card_data {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.card_Data_img {
-    width: fit-content;
-    margin: auto;
-    border: var(--scroll-color) 1px solid;
-    border-radius: 10px;
-}
-
-.data_text{
-    margin-left: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border-left: var(--scroll-color) 1px solid;
-    & span {
-        width: 100%;
-        padding: 8px;
-        font-size: 12px;
-        text-align: justify;
-        & li {
-            font-size: 12px;
-            list-style: disc;
-            margin: 3px 8px;
-        }
-    }
-}
-
-.card_Data_title{
-    color: var(--main-color-2);
-    font-size: 18px;
-    border-bottom: var(--scroll-color) 1px solid;
-    font-weight: 600;
-}
-/* FIM DO DATA ANALITYCS */
-
-/* SESSÃO DE EDUCAÇÃO */
-.topic{
-    color: var(--main-color-2);
-    font-size: 18px;
-}
-
-h3 {
-    padding: 8px;
-    border-bottom: var(--scroll-color) 1px solid;
-}
-
-.content > .container {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border-radius: 14px;
-    font-size: 14px;
-    margin-bottom: 5px;
-    
-}
-.content > .container span {
-    margin: 5px;
-    text-align: justify;
-}
-
-.container a:hover{
-    color: var(--main-color-2);
-    text-decoration: underline;
-}
-
-.content > div > li {
-    font-size: var(--text-size);
-    list-style: circle;
-}
-
-.evento {
-    color: var(--sub-color);
-    margin: 8px 0;
-}
-
-.data {
-    color: var(--sub-color);
-    font-size: 16px;
-}
-/* FIM DA SESSÃO DE EDUCAÇÃO */
-
-.skills_list{
-    padding: 5px;
-}
-.skills_list li{
-    font-size: var(--text-size);
-    margin-bottom: 8px;
-}
-
-/* BALLS */
-.balls_container, .balls_container_aside{
-    display: flex;
-
-}
-.ball {
-    width: 3rem;
-    height: 3rem;
-    margin: auto;
-    color: var(--text-light);
-    font-size: 1.5rem;
-    border-radius: 999px;
-    & a {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-.balls_container_aside .ball {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
-
-}
-
-#ball_mail{
-    background-color: var(--scroll-color);
-}
-#ball_linkedin {
-   background-color: #0E76A8; 
-}
-#ball_github {
-    background-color: #303030;
-}
-/* FIM DA BALLS */
-
-/* ICONS */
-.material-symbols-outlined {
-    font-size: 14px;
-}
-h3 > .material-symbols-outlined {
-    font-size: 18px;
-}
-.title > .material-symbols-outlined {
-    font-size: 22px;
-    margin-right: 10px;
-}
-/* FIM DOS ICONS */
-
 @media (max-width: 480px) {
+    .menu {
+        gap: 1vw;
+    }
     main {
+        min-height: calc(100vh - 21vh);
+    }
+    main section {
+        margin-top: 0;
+        padding: 0 2rem;
+        padding-bottom: 2rem;
+    }
+    .main-grid {
         display: block;
-        margin: 30px;
     }
-    .aside_mobile {
-        display: block;
+    .nome-main {
+        font-size: 24px;
     }
-    aside, .menu {
-        display: none;
+    .title-main {
+        font-size: 1.5rem;
+        max-width: 75vw;
+        margin: 2vh 0;
     }
-    .nome-header{
-        font-weight: 500;
-        font-size: calc(var(--text-size)*1.5);
-        padding-left: 1em;
+    .title-section{
+        font-size: 1.5rem;
+        margin: 1.5vh 0;
+        & .material-symbols-outlined {font-size: 18px;}
     }
-    .section-projects {
-        grid-template-columns: 1fr 1fr;
+    .about-area {
+        max-width: 80vw;
     }
-    .title {
-        margin: 30px 10px 20px;
-    }
-    footer > div {
-        flex: 1;
-    }
-    .card_UI_title {
-        font-size: 14px;
-    }
-    .card_data{
-        display: flex;
-        flex-direction: column;
-    }
-    .data_text{
+    .branco_effect {
+        height: 5vh;
+        width: 40vw;
+        background-color: var(--text-light);
+        position: absolute;
+        right: 0;
+        top: -5vh;
         margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        border: none;
-        border-top: var(--scroll-color) 1px solid;
-        & span {
-            width: 100%;
-            padding: 8px;
-            font-size: 12px;
-            text-align: justify;
-            & li {
-                font-size: 12px;
-                list-style: disc;
-                margin: 3px 8px;
-            }
+        transform: perspective(300px) rotateX(45deg); /* transforma o elemento em um trapézio */
+        transform-origin: right bottom;
+    }
+    .link-box {
+        background-color: var(--main-color);
+        width: 6vh;
+        height: 6vh;
+        border-radius: 6px;
+        color: var(--text-light);
+    }
+    .section-details{
+        max-width: 100%;
+        padding: 1rem 2rem;
+        & .topic {
+            font-size: 18px;
+            & .material-symbols-outlined {font-size: var(--text-light);}
+        } & .content {
+            padding: 1vh 2vh;
+            margin-bottom: 1vh;
+        } & .evento {
+            margin: 1.5vh 0;
         }
     }
-    
-    .card_Data_title{
-        color: var(--main-color-2);
-        font-size: 12px;
-        border-bottom: var(--scroll-color) 1px solid;
+    footer > .links {
+        margin: 3vh;
+        margin-right: 5vw;
+    }
+    .link-box {
+        width: 10vh;
+        height: 10vh;
+        border-radius: 10px;
     }
 
+    /* PROJECTS */
+    .section-projects {
+        padding: 1rem;
+        margin: auto;
+    }
+    .card-container{
+        width: 90vw;
+        padding: 0;
+        gap: 0.5vw;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .card_img {
+        width: 80vw;
+    }
+    .card_description{
+        width: 80vw;
+    }
+    .card_ui{
+        width: 80vw;
+        margin: auto;
+        & .card_UI_title {
+            gap: 8px;
+            font-size: 14px;
+        }
+    }
+    .power-bi-list {
+        padding: 1vh 1vw;
+        & li {
+            margin: 0 0 0.5vh 1vw;
+        }
+    }
 }
