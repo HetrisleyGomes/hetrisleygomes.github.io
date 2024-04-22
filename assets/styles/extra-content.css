@@ -1,6 +1,13 @@
 @media (max-width: 480px) {
+    :root{
+        --text-size: 14px;
+    }
     .menu {
-        gap: 1vw;
+        gap: 0;
+        & li {
+            margin-left: 5px;
+            flex-grow: 1;
+        }
     }
     main {
         min-height: calc(100vh - 21vh);
@@ -15,6 +22,9 @@
     }
     .nome-main {
         font-size: 24px;
+    }
+    .nome-navbar {
+        font-size: 18px;
     }
     .title-main {
         font-size: 1.5rem;
@@ -35,7 +45,7 @@
         background-color: var(--text-light);
         position: absolute;
         right: 0;
-        top: -5vh;
+        top: -4vh;
         margin: 0;
         transform: perspective(300px) rotateX(45deg); /* transforma o elemento em um trapézio */
         transform-origin: right bottom;
@@ -60,14 +70,12 @@
             margin: 1.5vh 0;
         }
     }
-    footer > .links {
-        margin: 3vh;
-        margin-right: 5vw;
+    footer {
+        margin-top: 2vh;
+        height: 15vh;
     }
-    .link-box {
-        width: 10vh;
-        height: 10vh;
-        border-radius: 10px;
+    footer > .links {
+        margin: 5vh 5vw 0 0;
     }
 
     /* PROJECTS */
