@@ -86,6 +86,7 @@
     display: grid;
     gap: 1vw;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
 }
 .cards {
     display: flex;
@@ -133,7 +134,7 @@
 .card_ui{
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 28vw;
     & div {
         display: grid;
         grid-template-columns: 1fr 1fr;
