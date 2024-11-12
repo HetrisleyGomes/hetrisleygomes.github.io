@@ -105,7 +105,7 @@ footer {
     position: relative;
     margin-top: auto;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     background-color: var(--text-light);
     display: flex;
