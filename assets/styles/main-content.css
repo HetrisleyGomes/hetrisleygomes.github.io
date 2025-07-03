@@ -39,7 +39,7 @@ body {
     color: var(--text-light);
     overflow-y: auto;
     font-size: var(--text-size);
-    min-height: calc(100vh);
+    /*min-height: calc(100vh);*/
 }
 /* HEADER */
 .header {
