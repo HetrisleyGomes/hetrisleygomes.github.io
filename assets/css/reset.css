@@ -1,12 +1,5 @@
 /* CSS Reset */
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Remove default margin */
 body, ul, li, p {
   margin: 0;

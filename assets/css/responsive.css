@@ -1,0 +1,334 @@
+@media (max-width: 992px) {  
+    .about-content {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .headline {
+        font-size: 2.5rem;
+    }
+
+    header .container {
+        margin: 0;
+        max-width: 950px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: -webkit-fill-available
+    }
+}
+@media (max-width: 814px) {
+    header {
+        padding: .75rem;
+    }
+
+    header .container {
+        max-width: 750px;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    #hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list{
+        justify-content: center
+    }
+
+    .section-title::after, .subtitles::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .section-title {
+        display: block;
+        text-align: center;
+    }
+    
+    .photo-placeholder img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .headline {
+        font-size: 2.5rem;
+    }
+    
+    .subheadline {
+        max-width: 100%;
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 300px;
+        height: 500px;
+    }
+
+    .project-content {
+        padding: 1rem;
+    }
+
+    .project-content h3{
+        font-size: 1.3rem;
+        margin-top: 0.75rem;
+    }
+
+    .project-content p {
+        font-size: 0.9rem;
+    }
+
+    .subtitles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .competencia-separator {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .competencia-contents{
+        width: 100%;
+    }
+}
+@media (max-width: 770px){
+    header .container {
+        max-width: 700px;
+    }
+
+    .about-text{
+        text-align: center;
+        margin: 0 .75rem;
+    }
+
+    .about-text p {
+        font-size: .95rem;
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 290px;
+        height: 470px;
+    }
+
+    .project-image {
+        height: 170px;
+    }
+
+    .project-content p{
+        max-height: 97px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 660px) {
+    header .container {
+        width: 90vw;
+    }
+
+        nav ul {
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 500px;
+            height: 200vh;
+            background-color: var(--background-dark);
+            box-shadow: -2px 0 10px var(--primary-color);
+            transition: var(--transition);
+            z-index: 1000;
+            padding-top: 4rem;
+        }
+
+        nav.open {
+            right: 0;
+        }
+
+        .menu-toggle {
+            display: block;
+            background: none;
+            border: none;
+            transition: var(--transition);
+            cursor: pointer;
+            z-index: 1100;
+        }
+
+        .menu-toggle.open {
+            margin-right: 14rem;
+        }
+
+        /* Esconde o nav normal em telas pequenas */
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .logo {
+            z-index: 1100; /* para ficar acima do menu */
+        }
+
+    .headline {
+        font-size: 2rem;
+    }
+    
+    .subheadline{
+        font-size: 1rem;
+    }
+    
+    .photo-placeholder img{
+        width: 220px;
+        height: 220px;
+    }
+    
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 410px;
+        height: 500px;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content{
+        padding: 1rem;
+    }
+
+    .project-content h3{
+        font-size: 1.5rem;
+    }
+
+    .project-content p{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 480px){
+    header .container {
+        width: 85vw;
+    }
+
+    nav {
+        width: 450px;
+    }
+
+    .menu-toggle.open {
+        margin-right: 0;
+    }
+
+    #hero{
+        padding: 5rem 0 3rem;
+    }
+
+    .project-card {
+        width: 350px;
+        height: 450px;
+    }
+
+    .project-image {
+        height: 170px;
+    }
+
+    .project-content{
+        padding: 1rem;
+    }
+
+    .project-content h3{
+        font-size: 1.3rem;
+        margin: .25rem 0;
+    }
+
+    .project-content p{
+        font-size: 0.85rem;
+    }
+
+    .formation-main p::after{
+        width: 100%;
+    }
+
+    .formation-main p, 
+    .formation-complementary p,
+    .experience,
+    .experience p {
+        font-size: 0.75rem;
+    }
+    .text-main{
+        font-weight: 700;
+    }
+
+    .subtitles {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 393px) {
+    .headline{
+        font-size: 1.85rem;
+    }
+
+    .photo-placeholder img{
+        width: 230px;
+        height: 230px;
+    }
+
+    .about-text p{
+        font-size: 0.75rem;
+    }
+
+    .project-card {
+        width: 320px;
+    }
+
+    .project-content h3{
+        font-size: 1.2rem;
+    }
+
+    .project-content p{
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,47 @@
+/* --- Animations --- */
+@keyframes morphing {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        box-shadow: var(--shadow-lg), var(--shadow-glow);
+    }
+
+    25% {
+        border-radius: 40% 60% 60% 40% / 50% 30% 70% 50%;
+        box-shadow: var(--shadow-md), var(--shadow-glow);
+    }
+
+    50% {
+        border-radius: 60% 40% 30% 70% / 60% 40% 60% 40%;
+        box-shadow: var(--shadow-sm), var(--shadow-glow);
+    }
+
+    75% {
+        border-radius: 35% 65% 65% 35% / 40% 60% 60% 40%;
+        box-shadow: var(--shadow-md), var(--shadow-glow);
+    }
+
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        box-shadow: var(--shadow-lg), var(--shadow-glow);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

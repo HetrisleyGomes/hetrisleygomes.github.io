@@ -1,0 +1,33 @@
+:root {
+  /* Core */
+  --primary-color: #296dce;
+  --primary-light: #5b92f1;
+  --primary-dark: #1e56a5;
+
+  /* Accent (Complementar/Contrastante para botões, links, etc) */
+  --accent-color: #26ebf9;         /* Laranja vibrante */
+  --accent-light: #6bfff8;
+
+  /* Textos */
+  --text-color: #aaaaaa;           /* Cinza neutro */
+  --text-light: #f4f4f4;           /* Para dark mode */
+  --text-muted: #6c757d;           /* Cinza médio, útil para labels, etc */
+
+  /* Fundos */
+  --background: #0f1a2e;          /* Fundo geral, azul escuro acinzentado */
+  --background-dark: #0a1323;     /* Ainda mais escuro, para áreas profundas */
+  --background-light: #1b2a47;    /* Fundo levemente mais claro para contrastar cards/seções */
+
+  /* Cards, Containers */
+  --card-background: rgba(255, 255, 255, 0.05);      /* Cartões, seções */
+  --border-color: #e0e0e080;         /* Bordas sutis */
+
+  /* Animações */
+  --transition: all 0.3s ease-in-out;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 0 10px rgba(41, 109, 206, 0.6); /* Brilho azulado */
+}

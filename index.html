@@ -1,51 +1,263 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meu Portfólio</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="assets/styles/reset.css">
-        <link rel="stylesheet" href="assets/styles/main-content.css">
-        <link rel="stylesheet" href="assets/styles/extra-content.css">
-    </head>
-    <body>
-        <header class="header">
-            <nav class="menu">
-                <li><a href="competencias.html">Competências</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h1 class="nome-main">Hetrisley Gomes</h1>
-                <h2 class="title-main">Desenvolvedor de sistemas e analista de dados</h2>
-                <p class="about-area">Olá! Eu sou um desenvolvedor Full-Stack, analista de dados e futuro especialista de pesquisa e design UI UX. Sou apaixonado por diversos aspectos e variantes da cultura pop, gosto das cores, das formas, dos personagens e histórias que cada nicho cria, perspectivas únicas, em uma constante inovação e evolução.</p>
-            </section>
-        </main>
-
-        <footer>
-            <div class="branco_effect"></div>
-            <div class="links">
-                <a href="mailto:hetrisleygomes@gmail.com" target="_blank">
-                <button class="link-box">
-                    <span class="bi bi-envelope"></span>
-                </button>
-                </a>
-                <a href="https://www.linkedin.com/in/hetrisley-gomes-760aa6227" target="_blank">
-                <button class="link-box">
-                    <span class="bi bi-linkedin"></span>
-                </button>
-                </a>
-                <a href="http://github.com/HetrisleyGomes" target="_blank">
-                <button class="link-box">
-                    <span class="bi bi-github"></span>
-                </button>
-                </a>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetrisley Gomes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#">
+                <h1 class="logo">Hetrisley Gomes</h1>
+            </a>
+            <!-- Botão Hamburger -->
+            <button class="menu-toggle" id="menu-toggle">
+                <img src="./assets/imgs/icons/menu.png" alt="Menu-lateral">
+            </button>
+            <nav id="nav">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#competencias">Competências</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="headline">Desenvolvedor de sistemas para a inovação.</h2>
+                <p class="subheadline">Desenvolvedor Full-Stack, analista de dados, especialista de pesquisa e design UI UX. Sou apaixonado por diversos aspectos e variantes da cultura pop, gosto das cores, das formas, dos personagens e histórias que cada nicho cria, perspectivas únicas, em uma constante inovação e evolução.</p>
+                <a href="#projetos" class="cta-button">Veja meus projetos</a>
             </div>
-        </footer>
-    </body>
+            <div class="hero-image">
+                <div class="photo-placeholder">
+                    <img src="./assets/imgs/me.jpg" alt="Foto de Hetrisley Gomes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá, me chamo Hetrisley Gomes, sou nascido e criado no Rio Grande do Norte - Brasil. Dês de pequeno sempre fui bastante criativo e pensava fora da caixa, essas características de fato me ajudaram a escolher que rumo seguir. Sou um desenvolvedor Full-Stack, analista de dados e futuro especialista de pesquisa e design UI UX. Sou apaixonado por diversos aspectos e variantes da cultura pop, gosto das cores, das formas, dos personagens e histórias que cada nicho cria, perspectivas únicas, em uma constante inovação e evolução.</p>
+                    <p>Acredito que a tecnologia deve ser acessível e intuitiva para todos, e é isso que busco em cada projeto que desenvolvo.</p>
+                </div>
+                <div class="skills">
+                    <h3 class="subtitles">Tecnologias</h3>
+                    <ul class="skills-list">
+                        <li class="skill-item"><img class="icons" src="./assets/imgs/icons/HTML5.svg" alt="html logo">Desenvolvimento de sites HTML, CSS e JavaSript;</li>
+                        <li class="skill-item"><img class="icons" src="./assets/imgs/icons/github-icon.png" alt="github logo">Versionamento de código, GIT e GitHub;</li>
+                        <li class="skill-item"><img class="icons" src="./assets/imgs/icons/SQL Developer.svg" alt="SQL example">Gerência de banco de dados SQL e NoSQL;</li>
+                        <li class="skill-item"><img class="icons" src="./assets/imgs/icons/web-design_13191231.png" alt="ui ux example">Fundamentos do design UI/UX;</li>
+                        <li class="skill-item"><img class="icons" src="./assets/imgs/icons/Vue.js.svg" alt="vue logo">Domínio em Frameworks Vue.js, Flask;</li>
+                        <li class="skill-item"><img class="icons" src="./assets/imgs/icons/Python.svg" alt="python logo">Analise de dados com Python e Power BI;</li>
+                        <li class="skill-item"><img class="icons" src="./assets/imgs/icons/scrum_15189448.png" alt="scrum example">Metodologias Ágeis (SCRUM);</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projetos">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image"><img src="./assets/imgs/whoplants.png" alt="Who Plants"></div>
+                    <div class="project-content">
+                        <h3>Who plants</h3>
+                        <p>"Who's Plants?" é um jogo inspirado no universo de Plants vs Zombies. A cada dia, uma planta aleatória é escolhida como a "planta do dia", e o jogador deve tentar adivinhar qual é, baseando-se nas suas características.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://github.com/HetrisleyGomes/whos-plants" target="_blank" class="project-link">Ver projeto</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image"><img src="./assets/imgs/registro_sup.png" alt="Registro suporte"></div>
+                    <div class="project-content">
+                        <h3>Requisições de suporte</h3>
+                        <p>Projeto desenvolvido para registrar e gerenciar de maneira online, as requisições para a equipe de suporte e tecnologia da cidade e municipios de Monte Alegre.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://github.com/HetrisleyGomes/projeto-equipe-tecnologia" target="_blank" class="project-link">Ver projeto</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-image"><img src="./assets/imgs/MyLanche.png" alt="MyLanche"></div>
+                    <div class="project-content">
+                        <h3>My Lanche</h3>
+                        <p>Um software de vendas de produtos alimenticios, voltado para pequenos negocios. Produzido durante o período do curso de TSI.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>Vue.js</span>
+                        </div>
+                        <a href="https://github.com/HetrisleyGomes/MyLanche" target="_blank" class="project-link">Ver projeto</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="competencias">
+        <div class="container">
+            <h2 class="section-title">Competências</h2>
+            <div class="competencia-separator">
+                <div class="competencia-contents">
+                    <h3 class="subtitles">Formação</h3>
+                    <div class="formation">
+                        <div class="formation-main">
+                            <p>
+                                <span>IFRN - Campus Parnamirim</span>
+                                <span class="text-main">Tecnologia em Sistemas para Internet</span>
+                                <span class="text-date">Fevereiro de 2020 - Junho de 2025.</span>
+                            </p>
+                            
+                        </div>
+                        <div class="formation-complementary">
+                            <p>
+                                <span class="text-main">Coursera - Google UX Design</span>
+                                <span>Junho de 2023 - Novembro de 2023.</span>
+                            </p>
+                            <div class="divisor-line"></div>
+                            <p>
+                                <span class="text-main">Certificado AWS Academy Graduate - AWS Academy Cloud Foundations</span>
+                                <span>AWS Academy - 20 horas</span>
+                            </p>
+                            <div class="divisor-line"></div>    
+                            <p>
+                                <span class="text-main">Técnico em Manutenção e Suporte para Informática</span>
+                                <span>UFRN-EAJ Monte Alegre - 1005 horas</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="competencia-contents">
+                    <h3 class="subtitles">Experiência</h3>
+                    <div class="experience">
+                        <h4>Estágio no setor de tecnologia no município de Monte Alegre</h4>
+                        <p>
+                            Participação ativa na equipe de suporte, manutenção e tecnologia do municipio de Monte Alegre - RN, onde houveram colaborações para o desenvolvimento de sistemas para o auxilio de atendimentos e registros.
+                            <br>
+                            <span class="text-date">Maio 2024</span>
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h4>Estágio acadêmico em parceria com a SESAP</h4>
+                        <p>
+                            Contribuição em um projeto de pesquisa científica em colaboração entre o Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN) e a Secretaria de Saúde do Estado do Rio Grande do Norte (SESAP), durante um período de seis meses.
+                            <br>
+                            <span class="text-date">Agosto 2022</span>
+                        </p>
+
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required autocomplete="off"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar mensagem</button>
+                </form>
+                <div class="contact-info">
+                    <h3 class="subtitles">Informações de Contato</h3>
+                    <div class="contact-methods">
+                        <a href="mailto:hetrisleygomes@gmail.com" target="_blank" class="contact-method">
+                            <span class="icon"><img src="./assets/imgs/icons/gmail-icon.png" alt="Ícone Gmail"></span>
+                            <span>hetrisleygomes@gmail.com</span>
+                        </a>
+                    </div>
+                    
+                    <h3 class="subtitles">Redes Sociais</h3>
+                    <div class="social-grid">
+                        <a href="https://www.linkedin.com/in/hetrisley-gomes-760aa6227" target="_blank" class="social-item linkedin">
+                            <span class="icon"><img src="./assets/imgs/icons/linkedin-icon.png" alt="Ícone LinkedIn"></span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="http://github.com/HetrisleyGomes" target="_blank" class="social-item github">
+                            <span class="icon"><img src="./assets/imgs/icons/github-icon.png" alt="ÍconeGitHub"></span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/hetrisleygomes/" target="_blank" class="social-item instagram">
+                            <span class="icon"><img src="./assets/imgs/icons/instagram-icon.png" alt="Ícone Instagram"></span>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Hetrisley Gomes - 2025</p>
+        </div>
+    </footer>
+</body>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    menuToggle.classList.toggle('open');
+  });
+
+  // Opcional: fecha o menu ao clicar em um link
+  const navLinks = nav.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuToggle.classList.remove('open');
+    });
+  });
+</script>
 </html>
