@@ -107,7 +107,7 @@ body {
 .section-title, .subtitles{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
     color: var(--accent-color);
@@ -123,7 +123,7 @@ body {
 /* HERO */
 #hero {
     height: 100vh;
-    padding: 10rem 0 6rem;
+    padding: 6rem 0 6rem;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -253,7 +253,7 @@ body {
 
 /* --- SOBRE --- */
 #sobre {
-    padding: 8rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -323,7 +323,7 @@ body {
 
 /* --- PROJETOS --- */
 #projetos {
-    padding: 8rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -484,7 +484,7 @@ body {
 
 /* --- COMPETêNCIAS --- */
 #competencias {
-    padding: 8rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -560,7 +560,7 @@ body {
 
 /* --- CONTATO --- */
 #contato {
-    padding: 8rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -604,7 +604,7 @@ body {
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: -webkit-fill-available;
     padding: 1rem;
     border: 1px solid var(--border-color);
     border-radius: 8px;
